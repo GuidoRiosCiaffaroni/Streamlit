@@ -1,7 +1,8 @@
 sudo apt update -y 
 sudo apt upgrade -y
 
-sudo apt install -y 
-sudo apt python3 -y 
-sudo python3-pip -y 
-sudo python3-venv -y
+sudo apt install python3 -y 
+sudo apt install python3-pip -y 
+sudo apt install python3-venv -y
+
+sudo apt autoremove -y
