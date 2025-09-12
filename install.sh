@@ -6,3 +6,5 @@ sudo apt install python3-pip -y
 sudo apt install python3-venv -y
 
 sudo apt autoremove -y
+
+apt list --upgradable
