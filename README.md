@@ -1,4 +1,4 @@
-### Texto de la clase
+### Streamlit
 
 El siguiente script contiene el desarrollo de una aplicación en **Streamlit**, estructurada para cumplir con los criterios de evaluación.  
 
@@ -15,3 +15,19 @@ El siguiente script contiene el desarrollo de una aplicación en **Streamlit**, 
   - En formato **CSV** para los embeddings  
   - Como imágenes (**PNG/SVG**) de las figuras generadas  
   - Además de la posibilidad de guardar la sesión  
+
+
+#1. Actualizar el sistema
+  ``` 
+sudo apt update && sudo apt upgrade -y
+sudo apt install nano -y 
+sudo apt install tmux -y
+  ``` 
+
+#2. Instalar dependencias basicas
+ ```
+sudo apt install -y python3 python3-pip python3-venv
+
+ ```
+
+  
