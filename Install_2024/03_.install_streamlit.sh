@@ -1,0 +1,2 @@
+pip install --upgrade pip
+pip install streamlit numpy pandas matplotlib seaborn plotly scikit-learn umap-learn kaleido
