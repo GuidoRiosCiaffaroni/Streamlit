@@ -17,6 +17,8 @@ El siguiente script contiene el desarrollo de una aplicación en **Streamlit**, 
   - Además de la posibilidad de guardar la sesión  
 
 
+>01_install.sh
+
 #1. Actualizar el sistema
   ``` 
 sudo apt update && sudo apt upgrade -y
@@ -27,7 +29,24 @@ sudo apt install tmux -y
 #2. Instalar dependencias basicas
  ```
 sudo apt install -y python3 python3-pip python3-venv
-
  ```
 
+
+>02_entorno.sh
+ ```
+#  Crear un entorno virtual
+rm -rf ~/streamlit_app
+mkdir ~/streamlit_app && cd ~/streamlit_app
+python3 -m venv venv
+source venv/bin/activate
+ ```
+
+
+ >03_install_streamlit.sh
+  ```
+# Instalar streamlit dentro del entorno 
+sudo pip install --upgrade pip
+sudo pip install streamlit numpy pandas matplotlib seaborn plotly scikit-learn umap-learn kaleido openpyxl
+
+  ```
   
