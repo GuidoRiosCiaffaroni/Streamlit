@@ -2,89 +2,48 @@ import io
 import base64
 from typing import Tuple, Optional
 
-
-
 import numpy as np
 import pandas as pd
 import streamlit as st
 
-
-
 from sklearn.model_selection import train_test_split
-
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
-
 from sklearn.impute import SimpleImputer, KNNImputer
-
 from sklearn.decomposition import PCA
-
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
-
 from sklearn.manifold import TSNE
-
 from sklearn.cluster import KMeans
-
 from sklearn.neighbors import KNeighborsClassifier
-
 from sklearn.metrics import accuracy_score, silhouette_score
-
-
 
 # UMAP es externo a scikit-learn
 
 try:
-
     import umap
-
 except Exception:
-
     umap = None
-
-
 
 import plotly.express as px
 
-
-
-st.set_page_config(page_title="Examen 4.5 – Reducción de Dimensionalidad", layout="wide")
-
-
-
-st.title("Examen 4.5 – App Streamlit de Reducción de Dimensionalidad")
-
+st.set_page_config(page_title="Reducción de Dimensionalidad", layout="wide")
+st.title("App Streamlit de Reducción de Dimensionalidad")
 st.caption("Carga tu CSV/XLSX, prepara los datos y explora PCA, LDA, t‑SNE y UMAP con métricas y exportables.")
 
-
-
 # =============================
-
 # Sidebar: Carga y Pre‑proceso
-
 # =============================
 
 st.sidebar.header("1) Carga de datos")
-
 up = st.sidebar.file_uploader("Sube un archivo CSV o XLSX", type=["csv", "xlsx"]) 
-
-
 
 # Opcional: columnas especiales
 
 st.sidebar.header("2) Configuración de columnas")
-
 use_header = st.sidebar.checkbox("La primera fila tiene encabezados", value=True)
-
 sep = st.sidebar.selectbox("Separador (solo CSV)", [",", ";", "\t", "|"], index=0)
-
 encoding = st.sidebar.text_input("Encoding (vacío = auto)", value="")
-
 id_col = st.sidebar.text_input("Columna ID (opcional)")
-
-
-
 target_col = st.sidebar.text_input("Columna target (clase) – necesario para LDA y accuracy")
-
-
 
 st.sidebar.header("3) Limpieza e imputación")
 
