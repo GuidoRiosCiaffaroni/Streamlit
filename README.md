@@ -598,7 +598,17 @@ Debajo del cuadro de carga aparece el archivo Dry_Bean_Dataset.xlsx, con un tama
 
 > ### 13.-
 
+En esta imagen se puede observar la sección “2) Configuración de columnas” dentro de la aplicación de Streamlit.
 
+El panel permite definir distintos parámetros relacionados con la estructura del dataset:
+
+* La opción “La primera fila tiene encabezados” aparece marcada, lo que indica que la aplicación reconocerá los nombres de las variables a partir de la primera fila del archivo cargado.
+* El campo “Separador (solo CSV)” está configurado con la coma (,) como delimitador por defecto.
+* Se incluye un espacio para especificar el Encoding, en caso de ser necesario, aunque puede dejarse vacío para que se detecte automáticamente.
+* El apartado “Columna ID (opcional)” permite seleccionar una columna que identifique de manera única cada fila del dataset.
+* Finalmente, el campo “Columna target (clase)” es esencial para los métodos supervisados, ya que define la variable objetivo necesaria para ejecutar algoritmos como LDA y calcular la métrica de accuracy con kNN.
+
+Este módulo ofrece al usuario control sobre la correcta interpretación de los datos, asegurando un preprocesamiento adecuado para el análisis posterior.
 
 ![012](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/012.png)
 
