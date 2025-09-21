@@ -420,7 +420,7 @@ try:
     )
 
 except Exception as e:
-    st.info("Para exportar PNG de Plotly, instala 'kaleido'.")
+    st.info("Para exportar PNG de Plotly, usa 'kaleido'.")
 
 # =====================
 # Notas y ayuda
@@ -441,8 +441,17 @@ with st.expander("Notas y recomendaciones"):
 
     )
 ```
->
+>Correr el Codigo 
 ```
 streamlit run app.py
+
+```
+
+
+> Para subir el arcchivo 
+
+```
+# pasa la propiedad a tu usuario
+sudo chown -R ubuntu:ubuntu /home/ubuntu/Streamlit
 
 ```

@@ -341,7 +341,7 @@ try:
     )
 
 except Exception as e:
-    st.info("Para exportar PNG de Plotly, instala 'kaleido'.")
+    st.info("Para exportar PNG de Plotly, usa 'kaleido'.")
 
 # =====================
 # Notas y ayuda
@@ -358,3 +358,5 @@ with st.expander("Notas y recomendaciones"):
         - Para **silhouette** se aplica *k‑means* sobre el embedding 2D.
         """
     )
+
+
