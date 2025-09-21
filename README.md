@@ -640,5 +640,15 @@ Estas configuraciones aseguran que los datos se encuentren en un formato estanda
 
 ![014](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/014.png)
 
+> ### 16.-
+
+En esta imagen se puede observar la sección “5) Selección de método y parámetros” dentro de la aplicación en Streamlit.
+
+En este apartado, el usuario tiene la posibilidad de escoger el algoritmo de reducción de dimensionalidad que será aplicado al dataset. En este caso, el campo “Método de reducción” muestra seleccionada la opción PCA (Análisis de Componentes Principales).
+
+La elección de PCA permite proyectar los datos originales en un espacio de menor dimensión, preservando la mayor cantidad posible de varianza. Esto facilita la visualización de la estructura de los datos y sirve como base para la posterior aplicación de métricas y algoritmos de análisis.
+
+El diseño de este módulo también contempla la configuración de otros métodos (como LDA, t-SNE o UMAP), lo que otorga flexibilidad en el análisis y permite comparar distintos enfoques de reducción de dimensionalidad.
+
 ![015](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/015.png)
 
