@@ -455,3 +455,8 @@ streamlit run app.py
 sudo chown -R ubuntu:ubuntu /home/ubuntu/Streamlit
 
 ```
+
+
+
+
+![Texto alternativo para la imagen](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/000.png)
