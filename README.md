@@ -512,53 +512,20 @@ En esta imagen se puede observar la sección “Vista previa de datos” de la a
 
 La tabla despliega distintas variables numéricas asociadas a las características de las muestras. Entre ellas destacan:
 
-Area: superficie medida.
-
-Perimeter: perímetro de la figura.
-
-MajorAxisLength y MinorAxisLength: longitudes de los ejes mayor y menor.
-
-AspectRation: relación de aspecto entre los ejes.
-
-Eccentricity: grado de desviación respecto a una forma circular.
-
-ConvexArea: área convexa que encierra la figura.
-
-EquivDiameter: diámetro equivalente.
-
-Extent: proporción del área de la figura respecto al área del rectángulo que la contiene.
-
-Solidity: relación entre el área de la figura y el área convexa.
-
-Este estado refleja que los datos han sido procesados correctamente por la aplicación y están listos para ser utilizados en los métodos de reducción de dimensionalidad (PCA, LDA, t-SNE y UMAP) que forman parte del flujo de análisis.
-
-> ### 7.-
-En esta imagen se puede observar la sección “Vista previa de datos” de la aplicación en Streamlit, donde se muestran algunas de las filas del dataset previamente cargado.
-
-La tabla despliega distintas variables numéricas asociadas a las características de las muestras. Entre ellas destacan:
-
-Area: superficie medida.
-
-Perimeter: perímetro de la figura.
-
-MajorAxisLength y MinorAxisLength: longitudes de los ejes mayor y menor.
-
-AspectRation: relación de aspecto entre los ejes.
-
-Eccentricity: grado de desviación respecto a una forma circular.
-
-ConvexArea: área convexa que encierra la figura.
-
-EquivDiameter: diámetro equivalente.
-
-Extent: proporción del área de la figura respecto al área del rectángulo que la contiene.
-
-Solidity: relación entre el área de la figura y el área convexa.
+* Area: superficie medida.
+* Perimeter: perímetro de la figura.
+* MajorAxisLength y MinorAxisLength: longitudes de los ejes mayor y menor.
+* AspectRation: relación de aspecto entre los ejes.
+* Eccentricity: grado de desviación respecto a una forma circular.
+* ConvexArea: área convexa que encierra la figura.
+* EquivDiameter: diámetro equivalente.
+* Extent: proporción del área de la figura respecto al área del rectángulo que la contiene.
+* Solidity: relación entre el área de la figura y el área convexa.
 
 Este estado refleja que los datos han sido procesados correctamente por la aplicación y están listos para ser utilizados en los métodos de reducción de dimensionalidad (PCA, LDA, t-SNE y UMAP) que forman parte del flujo de análisis.
 ![005](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/005.png)
 
-> ### 8.-
+> ### 7.-
 En esta imagen se puede observar la sección “Proyección 2D del embedding” generada por la aplicación de Streamlit tras aplicar el método de Análisis de Componentes Principales (PCA).
 
 El gráfico de dispersión muestra los datos proyectados en dos dimensiones principales:
@@ -569,7 +536,7 @@ El gráfico de dispersión muestra los datos proyectados en dos dimensiones prin
 La distribución de los puntos revela la estructura interna del dataset, evidenciando concentraciones y posibles agrupamientos de observaciones. Esta representación facilita la interpretación visual de la información de alta dimensionalidad reducida a un plano bidimensional, permitiendo identificar patrones, tendencias y relaciones entre las muestras analizadas.
 ![006](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/006.png)
 
-> ### 9.-
+> ### 8.-
 En esta imagen se puede observar la métrica no supervisada Silhouette, obtenida mediante la aplicación del algoritmo k-means sobre el embedding en dos dimensiones.
 
 El valor reportado es de 0.495, lo que indica un nivel moderado de cohesión y separación entre los grupos formados. La métrica Silhouette varía entre -1 y 1:
@@ -581,7 +548,7 @@ El valor reportado es de 0.495, lo que indica un nivel moderado de cohesión y s
 En este caso, el resultado de 0.495 sugiere que los clusters generados presentan una estructura razonable, con una separación aceptable entre ellos, aunque no completamente óptima.
 ![007](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/007.png)
 
-> ### 10.-
+> ### 9.-
 En esta imagen se puede observar la sección correspondiente a la métrica supervisada de Accuracy, calculada mediante el algoritmo k-Nearest Neighbors (kNN).
 
 El mensaje mostrado indica que aún no se ha definido una columna target en la barra lateral de configuración. Esta columna es necesaria para evaluar el desempeño del modelo supervisado, ya que representa la variable de clase o etiqueta con la que se comparan las predicciones generadas por el algoritmo.
@@ -590,7 +557,7 @@ Hasta que no se seleccione un atributo como target, la aplicación no podrá cal
 
 ![008](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/008.png)
 
-> ### 11.-
+> ### 10.-
 
 En esta imagen se puede observar la sección “Exportar resultados” de la aplicación desarrollada en Streamlit.
 
@@ -600,7 +567,7 @@ La presencia de esta opción confirma que la aplicación no solo permite la expl
 
 ![009](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/009.png)
 
-> ### 12.-
+> ### 11.-
 
 En esta imagen se puede observar la sección “Notas y recomendaciones” de la aplicación en Streamlit, presentada en un cuadro desplegable para consulta del usuario.
 
