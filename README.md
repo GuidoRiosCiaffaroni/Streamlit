@@ -595,10 +595,37 @@ Hasta que no se seleccione un atributo como target, la aplicación no podrá cal
 
 > ### 11.-
 
+En esta imagen se puede observar la sección “Exportar resultados” de la aplicación desarrollada en Streamlit.
+
+Se muestra disponible un botón con la opción “Descargar embedding (CSV)”, el cual permite al usuario exportar los resultados del proceso de reducción de dimensionalidad en formato CSV. Esta funcionalidad facilita la reutilización de los datos procesados, ya sea para análisis posteriores, integración con otras herramientas o almacenamiento para futuras consultas.
+
+La presencia de esta opción confirma que la aplicación no solo permite la exploración interactiva de los embeddings, sino también su preservación y portabilidad en un formato ampliamente utilizado.
 
 ![009](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/009.png)
 
+> ### 12.-
+
+En esta imagen se puede observar la sección “Notas y recomendaciones” de la aplicación en Streamlit, presentada en un cuadro desplegable para consulta del usuario.
+
+En esta sección se detallan consideraciones importantes sobre el uso de los distintos métodos y métricas:
+
+t-SNE es sensible a los parámetros perplexity y learning_rate, por lo que pequeños cambios pueden modificar la forma de los clusters.
+
+UMAP tiende a conservar mejor la estructura local con valores bajos de n_neighbors y la global con valores más altos.
+
+LDA requiere una columna target y puede generar como máximo n_clases − 1 dimensiones.
+
+PCA es un método lineal útil para capturar la varianza global y también puede emplearse como paso previo en otros análisis.
+
+Para el cálculo de accuracy, se aplica un particionado 80/20 utilizando el algoritmo kNN sobre el embedding 2D.
+
+Para la métrica de silhouette, se utiliza el algoritmo k-means aplicado igualmente sobre el embedding 2D.
+
+Este apartado cumple la función de guía práctica, orientando al usuario en la interpretación y correcta aplicación de los métodos de reducción de dimensionalidad y de las métricas incluidas en la aplicación.
+
 ![010](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/010.png)
+
+
 
 ![011](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/011.png)
 
