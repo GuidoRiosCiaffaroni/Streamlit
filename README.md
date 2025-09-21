@@ -51,6 +51,7 @@ sudo pip install streamlit numpy pandas matplotlib seaborn plotly scikit-learn u
   ```
   
 > Crear la app de prueba
+>app.py
 ```
 # App Streamlit para reducción de dimensionalidad
 
