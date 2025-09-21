@@ -457,13 +457,13 @@ sudo chown -R ubuntu:ubuntu /home/ubuntu/Streamlit
 ```
 
 
-> 
+> ### 1.-
 En esta imagen se puede observar que el usuario se encuentra dentro de su entorno virtual (venv) en Ubuntu, específicamente en la carpeta ~/streamlit_app. Desde esa ubicación ejecuta el comando:
 
 Lo anterior indica que el servidor de Streamlit está siendo iniciado correctamente desde el proyecto, constituyendo el paso final tras la configuración del entorno y la instalación de las librerías necesarias.
 ![000](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/000.png)
 
->
+> ### 2.-
 En esta imagen se puede observar que, tras ejecutar el comando streamlit run app.py dentro del entorno virtual (venv) en la carpeta ~/streamlit_app, el sistema despliega el mensaje de bienvenida de Streamlit.
 
 Se aprecia que la aplicación solicita opcionalmente ingresar un correo electrónico para recibir noticias, ofertas y actualizaciones. Además, informa sobre su política de privacidad y el uso de estadísticas de telemetría, aclarando que no se recopila ni almacena el contenido generado dentro de las aplicaciones (como texto, gráficos o imágenes).
@@ -471,7 +471,7 @@ Se aprecia que la aplicación solicita opcionalmente ingresar un correo electró
 Finalmente, se muestra la instrucción para desactivar la recopilación de estadísticas de uso mediante la configuración en el archivo ~/.streamlit/config.toml, agregando la siguiente línea:
 ![001](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/001.png)
 
->
+> ### 3.-
 En esta imagen se puede observar que, luego de ejecutar correctamente el comando streamlit run app.py, el sistema indica que la aplicación de Streamlit ya está disponible para visualizarse en el navegador.
 
 Se muestran dos direcciones de acceso:
@@ -483,7 +483,7 @@ Network URL: http://10.0.2.15:8501, que permite el acceso desde otros dispositiv
 Este mensaje confirma que el despliegue de la aplicación se realizó de manera exitosa y está lista para ser utilizada.
 ![002](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/002.png)
 
->
+> ### 4.-
 En esta imagen se puede observar la interfaz inicial de la aplicación desarrollada en Streamlit para la reducción de dimensionalidad.
 
 En el panel lateral izquierdo aparecen las secciones de configuración:
@@ -497,7 +497,7 @@ En el panel principal se muestra el título “App Streamlit de Reducción de Di
 Este estado refleja que la aplicación está lista para iniciar el procesamiento de datos, a la espera de que se cargue un dataset.
 ![003](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/003.png)
 
->
+> ### 5.-
 En esta imagen se puede observar la aplicación de Streamlit en funcionamiento, luego de haber cargado correctamente el archivo Dry_Bean_Dataset.xlsx de 3 MB.
 
 En el panel lateral izquierdo, dentro de la sección 1) Carga de datos, aparece el archivo ya cargado. En la sección 2) Configuración de columnas, se mantiene activa la opción que indica que la primera fila corresponde a encabezados, lo cual permite interpretar correctamente las variables del dataset.
@@ -507,7 +507,7 @@ En el panel principal de la aplicación se despliega el título “App Streamlit
 Este estado refleja que el sistema ya está listo para iniciar el preprocesamiento y aplicar los métodos de reducción de dimensionalidad configurados en la aplicación.
 ![004](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/004.png)
 
->
+> ### 6.-
 En esta imagen se puede observar la sección “Vista previa de datos” de la aplicación en Streamlit, donde se muestran algunas de las filas del dataset previamente cargado.
 
 La tabla despliega distintas variables numéricas asociadas a las características de las muestras. Entre ellas destacan:
@@ -532,7 +532,7 @@ Solidity: relación entre el área de la figura y el área convexa.
 
 Este estado refleja que los datos han sido procesados correctamente por la aplicación y están listos para ser utilizados en los métodos de reducción de dimensionalidad (PCA, LDA, t-SNE y UMAP) que forman parte del flujo de análisis.
 
->
+> ### 7.-
 En esta imagen se puede observar la sección “Vista previa de datos” de la aplicación en Streamlit, donde se muestran algunas de las filas del dataset previamente cargado.
 
 La tabla despliega distintas variables numéricas asociadas a las características de las muestras. Entre ellas destacan:
@@ -558,7 +558,7 @@ Solidity: relación entre el área de la figura y el área convexa.
 Este estado refleja que los datos han sido procesados correctamente por la aplicación y están listos para ser utilizados en los métodos de reducción de dimensionalidad (PCA, LDA, t-SNE y UMAP) que forman parte del flujo de análisis.
 ![005](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/005.png)
 
->
+> ### 8.-
 En esta imagen se puede observar la sección “Proyección 2D del embedding” generada por la aplicación de Streamlit tras aplicar el método de Análisis de Componentes Principales (PCA).
 
 El gráfico de dispersión muestra los datos proyectados en dos dimensiones principales:
