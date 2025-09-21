@@ -472,8 +472,29 @@ Finalmente, se muestra la instrucción para desactivar la recopilación de estad
 ![001](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/001.png)
 
 >
+En esta imagen se puede observar que, luego de ejecutar correctamente el comando streamlit run app.py, el sistema indica que la aplicación de Streamlit ya está disponible para visualizarse en el navegador.
 
+Se muestran dos direcciones de acceso:
+
+Local URL: http://localhost:8501, utilizada para acceder directamente desde la misma máquina en que se ejecuta el servidor.
+
+Network URL: http://10.0.2.15:8501, que permite el acceso desde otros dispositivos dentro de la misma red, siempre que el puerto correspondiente se encuentre abierto y accesible.
+
+Este mensaje confirma que el despliegue de la aplicación se realizó de manera exitosa y está lista para ser utilizada.
 ![002](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/002.png)
+
+>
+En esta imagen se puede observar la interfaz inicial de la aplicación desarrollada en Streamlit para la reducción de dimensionalidad.
+
+En el panel lateral izquierdo aparecen las secciones de configuración:
+
+1) Carga de datos, que permite subir un archivo en formato CSV o XLSX mediante un botón de exploración de archivos o arrastrando directamente el fichero, con un límite de 200 MB por archivo.
+
+2) Configuración de columnas, donde se puede indicar si la primera fila contiene encabezados y definir el separador en caso de trabajar con archivos CSV.
+
+En el panel principal se muestra el título “App Streamlit de Reducción de Dimensionalidad” acompañado de una breve descripción, y un mensaje informativo que indica al usuario que debe cargar un archivo CSV/XLSX desde la barra lateral para comenzar a trabajar con la aplicación.
+
+Este estado refleja que la aplicación está lista para iniciar el procesamiento de datos, a la espera de que se cargue un dataset.
 ![003](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/003.png)
 ![004](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/004.png)
 ![005](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/005.png)
