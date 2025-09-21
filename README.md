@@ -612,7 +612,31 @@ Este módulo ofrece al usuario control sobre la correcta interpretación de los 
 
 ![012](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/012.png)
 
+> ### 14.-
+
+En esta imagen se puede observar la sección “3) Limpieza e imputación” de la aplicación en Streamlit.
+
+Este apartado permite definir las estrategias de tratamiento de valores faltantes tanto para variables numéricas como categóricas:
+
+* En “Estrategia de imputación (numéricas)”, se ha seleccionado la opción median, lo que significa que los valores ausentes en columnas numéricas serán reemplazados por la mediana de cada variable.
+* En “Imputación para categóricas”, se ha escogido la opción most_frequent, con lo cual los valores faltantes en variables categóricas se completarán utilizando la categoría más frecuente en cada columna.
+
+Estas configuraciones aseguran un preprocesamiento robusto, evitando la pérdida de información por eliminación de filas incompletas y manteniendo la consistencia del dataset antes de aplicar los métodos de reducción de dimensionalidad.
+
 ![013](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/013.png)
+
+
+> ### 15.-
+
+En esta imagen se puede observar la sección “4) Escalado y codificación” de la aplicación en Streamlit.
+
+En este apartado se definen las transformaciones a aplicar sobre los datos antes de ejecutar los métodos de reducción de dimensionalidad:
+
+* En el bloque de escalado, se encuentra seleccionada la opción StandardScaler, que transforma las variables numéricas para que tengan media cero y desviación estándar uno, garantizando así que todas las características contribuyan de manera equilibrada al análisis.
+* Se ofrecen también las alternativas de MinMaxScaler (que normaliza los valores en un rango definido, habitualmente entre 0 y 1) y None, en caso de no aplicar ningún tipo de escalado.
+* Además, se observa marcada la opción “One-Hot Encode para categóricas (si existen)”, lo que implica que las variables categóricas presentes en el dataset serán transformadas en variables binarias, permitiendo que puedan ser utilizadas en los algoritmos de reducción de dimensionalidad y modelado.
+
+Estas configuraciones aseguran que los datos se encuentren en un formato estandarizado y numéricamente comparable, mejorando la calidad de los resultados obtenidos en el análisis posterior.
 
 ![014](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/014.png)
 
