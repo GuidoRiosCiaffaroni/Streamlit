@@ -108,8 +108,85 @@ sudo pip install --upgrade pip
 sudo pip install streamlit numpy pandas matplotlib seaborn plotly scikit-learn umap-learn kaleido openpyxl
   ```
   
-> Crear la app de prueba
->app.py
+> ## Crear la app de prueba
+### app.py
+
+En este fragmento de código se puede observar una aplicación completa en Streamlit diseñada para realizar reducción de dimensionalidad con múltiples métodos, incorporando preprocesamiento configurable, visualización interactiva, métricas y exportación de resultados.
+
+1) Importaciones y configuración inicial
+
+* Importa librerías de sistema y tipado (io, base64, typing), científicas (numpy, pandas), y de UI (streamlit).
+* De scikit-learn incorpora módulos para train/test split, escalado (StandardScaler, MinMaxScaler), imputación (SimpleImputer, KNNImputer), modelos de reducción (PCA, LDA, t-SNE), clustering (KMeans), clasificación (KNN) y métricas (accuracy, silhouette).
+* Carga UMAP de forma opcional (con try/except) y usa Plotly Express para gráficos.
+* Configura la página: st.set_page_config(..., layout="wide"), título y caption descriptiva.
+
+2) Barra lateral: carga y parámetros
+
+* 1) Carga de datos: file_uploader acepta CSV/XLSX.
+* 2) Configuración de columnas: encabezados, separador para CSV, encoding, columna ID y target (clase).
+* 3) Limpieza e imputación:
+    * Numéricas: median, mean, most_frequent, knn, o drop_rows.
+    * Categóricas: most_frequent o valor constante "None".
+* 4) Escalado y codificación: StandardScaler, MinMaxScaler o None; one-hot opcional para categóricas.
+* 5) Método de reducción: PCA, LDA, t-SNE, UMAP con sus hiperparámetros (p. ej., pca_n, lda_n, perplexity, learning_rate, n_neighbors, min_dist).
+* 6) Métricas: km_k (clusters de k-means) y knn_k (vecinos para kNN).
+
+3) Lectura segura y caching
+
+* _safe_read(...): lee XLSX con pd.read_excel y CSV con pd.read_csv, intentando encoding automático y fallback a latin1 si falla.
+* @st.cache_data: load_data(...) cachea la carga; to_downloadable_csv(...) y fig_to_png_bytes(...) cachean conversiones/exports.
+
+4) Preprocesamiento
+
+* preprocess(...) (cacheado con @st.cache_data):
+    * Separa numéricas y categóricas.
+    * Imputa según estrategia elegida (KNN para numéricas cuando corresponde; most_frequent o constante en categóricas).
+    * One-Hot Encoding opcional para categóricas.
+    * Escalado con StandardScaler o MinMaxScaler sobre columnas numéricas.
+    * Devuelve X procesada, vector y (si target existe) e ids (si id_col existe).
+
+5) Cálculo del embedding
+
+* compute_embedding(...) (cacheado con @st.cache_resource):
+    * PCA: PCA(n_components=...).
+    * LDA: requiere y; limita componentes a n_clases - 1.
+    * t-SNE: fija n_components=2, usa perplexity, learning_rate y init="pca".
+    * UMAP: si está instalado, usa n_neighbors, min_dist, n_components=2.
+* Manejo de errores: muestra st.error(...) y detiene con st.stop() si algo falla.
+
+6) Vista previa y preparación del DataFrame embebido
+
+* Muestra vista previa (st.dataframe(df.head(50))).
+* Asegura que el embedding tenga al menos 2 dimensiones para graficar; arma emb_df con Emb1, Emb2 y, si existen, target e id.
+
+7) Visualización interactiva
+
+* Gráfico principal: px.scatter de Emb1 vs Emb2, coloreando por target (si existe) y mostrando hover con id/target.
+* st.plotly_chart(..., use_container_width=True) para responsividad.
+
+8) Métricas
+
+* Silhouette (no supervisada): ejecuta k-means sobre el 2D y calcula silhouette_score; muestra con st.metric.
+* Accuracy (supervisada): si hay target, realiza train_test_split (80/20, stratify), entrena kNN y reporta accuracy. Si no hay target, informa que debe definirse.
+
+9) Exportación
+
+* CSV: botón st.download_button para bajar embedding_{método}.csv.
+* PNG: intenta exportar la figura con kaleido; si no está, informa que debe instalarse.
+
+10) Notas y ayuda
+
+* Expander con recomendaciones prácticas: sensibilidad de t-SNE, balance local/global de UMAP, límites teóricos de LDA, uso de PCA, y el criterio de cálculo de accuracy/silhouette sobre el embedding 2D.
+
+
+
+
+
+
+
+
+
+
 ```
 # App Streamlit para reducción de dimensionalidad
 
