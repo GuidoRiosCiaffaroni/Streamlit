@@ -1,27 +1,11 @@
-# app.py — Examen (Punto 4.5): App Streamlit para reducción de dimensionalidad
-
-# Autor: ChatGPT
-
-# Descripción: App interactiva con layout claro, caching, y exportables.
-
-# Cumple con: 4.5 App Streamlit (layout, interactividad con cache, export de embedding y figura)
-
-# Requisitos: ver requirements.txt sugerido en el mensaje principal
-
-
-
 import io
-
 import base64
-
 from typing import Tuple, Optional
 
 
 
 import numpy as np
-
 import pandas as pd
-
 import streamlit as st
 
 
