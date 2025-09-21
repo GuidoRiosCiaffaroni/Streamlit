@@ -17,24 +17,64 @@ El siguiente script contiene el desarrollo de una aplicación en **Streamlit**, 
   - Además de la posibilidad de guardar la sesión  
 
 
->01_install.sh
+>## 01_install.sh
+### 1. Actualizar el sistema
+En este fragmento de código se puede observar una serie de instrucciones ejecutadas en Ubuntu mediante la terminal.
 
-#1. Actualizar el sistema
+Las líneas cumplen las siguientes funciones:
+
+sudo apt update && sudo apt upgrade -y: actualiza la lista de paquetes disponibles y aplica las actualizaciones a los paquetes instalados en el sistema, de manera automática sin solicitar confirmación adicional.
+
+sudo apt install nano -y: instala el editor de texto Nano, ampliamente utilizado para la edición de archivos de configuración en la terminal.
+
+sudo apt install tmux -y: instala tmux, una herramienta que permite gestionar múltiples sesiones y paneles dentro de la terminal, facilitando el trabajo con procesos en segundo plano y la administración de servidores remotos.
+
+Este conjunto de comandos asegura que el sistema se mantenga actualizado y dota al entorno de herramientas básicas de edición y administración de sesiones en consola.
+
+
+
   ``` 
 sudo apt update && sudo apt upgrade -y
 sudo apt install nano -y 
 sudo apt install tmux -y
   ``` 
 
-#2. Instalar dependencias basicas
+### 2. Instalar dependencias basicas
+
+En este fragmento de código se puede observar una instrucción utilizada en Ubuntu para instalar componentes fundamentales del entorno de desarrollo en Python.
+
+La línea cumple las siguientes funciones:
+
+sudo apt install -y python3: instala la versión más reciente de Python 3 disponible en los repositorios oficiales de Ubuntu.
+
+sudo apt install -y python3-pip: incorpora pip, el gestor de paquetes de Python, que permite instalar y administrar librerías adicionales.
+
+sudo apt install -y python3-venv: añade el módulo de entornos virtuales (venv), que facilita la creación de espacios aislados para proyectos, evitando conflictos entre dependencias.
+
+Este comando garantiza que el sistema cuente con un entorno base completo para trabajar con Python, permitiendo tanto la ejecución de scripts como la gestión de librerías y el uso de entornos virtuales para proyectos específicos.
+
+
  ```
 sudo apt install -y python3 python3-pip python3-venv
  ```
 
 
->02_entorno.sh
+>## 02_entorno.sh
+###  Crear un entorno virtual
+
+En este fragmento de código se puede observar un conjunto de instrucciones destinadas a preparar un nuevo entorno de trabajo en Ubuntu para una aplicación desarrollada con Streamlit.
+
+Las líneas cumplen las siguientes funciones:
+
+* rm -rf ~/streamlit_app: elimina de manera recursiva y forzada la carpeta streamlit_app ubicada en el directorio personal del usuario, junto con todo su contenido.
+* mkdir ~/streamlit_app && cd ~/streamlit_app: crea nuevamente la carpeta streamlit_app y, en la misma línea, accede a ella como directorio de trabajo actual.
+* python3 -m venv venv: genera un entorno virtual de Python dentro de la carpeta venv, lo que permite instalar y gestionar dependencias de manera aislada del sistema principal.
+* source venv/bin/activate: activa el entorno virtual creado, de modo que todas las librerías que se instalen o ejecuten a partir de ese momento se mantendrán contenidas dentro de dicho entorno.
+
+Este procedimiento asegura un espacio de desarrollo limpio, ordenado y aislado para la aplicación de Streamlit, evitando conflictos con otras librerías o proyectos presentes en el sistema.
+
  ```
-#  Crear un entorno virtual
+
 rm -rf ~/streamlit_app
 mkdir ~/streamlit_app && cd ~/streamlit_app
 python3 -m venv venv
