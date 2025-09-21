@@ -563,9 +563,8 @@ En esta imagen se puede observar la sección “Proyección 2D del embedding” 
 
 El gráfico de dispersión muestra los datos proyectados en dos dimensiones principales:
 
-El eje Emb1 corresponde al primer componente principal, que captura la mayor varianza posible de los datos originales.
-
-El eje Emb2 representa el segundo componente principal, ortogonal al primero y encargado de capturar la mayor varianza restante.
+* El eje Emb1 corresponde al primer componente principal, que captura la mayor varianza posible de los datos originales.
+* El eje Emb2 representa el segundo componente principal, ortogonal al primero y encargado de capturar la mayor varianza restante.
 
 La distribución de los puntos revela la estructura interna del dataset, evidenciando concentraciones y posibles agrupamientos de observaciones. Esta representación facilita la interpretación visual de la información de alta dimensionalidad reducida a un plano bidimensional, permitiendo identificar patrones, tendencias y relaciones entre las muestras analizadas.
 ![006](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/006.png)
@@ -575,11 +574,9 @@ En esta imagen se puede observar la métrica no supervisada Silhouette, obtenida
 
 El valor reportado es de 0.495, lo que indica un nivel moderado de cohesión y separación entre los grupos formados. La métrica Silhouette varía entre -1 y 1:
 
-Valores cercanos a 1 reflejan que los clusters están bien definidos y separados.
-
-Valores cercanos a 0 sugieren solapamiento entre grupos.
-
-Valores negativos implican que los datos pueden estar mal asignados a los clusters.
+* Valores cercanos a 1 reflejan que los clusters están bien definidos y separados.
+* Valores cercanos a 0 sugieren solapamiento entre grupos.
+* Valores negativos implican que los datos pueden estar mal asignados a los clusters.
 
 En este caso, el resultado de 0.495 sugiere que los clusters generados presentan una estructura razonable, con una separación aceptable entre ellos, aunque no completamente óptima.
 ![007](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/007.png)
@@ -609,17 +606,12 @@ En esta imagen se puede observar la sección “Notas y recomendaciones” de la
 
 En esta sección se detallan consideraciones importantes sobre el uso de los distintos métodos y métricas:
 
-t-SNE es sensible a los parámetros perplexity y learning_rate, por lo que pequeños cambios pueden modificar la forma de los clusters.
-
-UMAP tiende a conservar mejor la estructura local con valores bajos de n_neighbors y la global con valores más altos.
-
-LDA requiere una columna target y puede generar como máximo n_clases − 1 dimensiones.
-
-PCA es un método lineal útil para capturar la varianza global y también puede emplearse como paso previo en otros análisis.
-
-Para el cálculo de accuracy, se aplica un particionado 80/20 utilizando el algoritmo kNN sobre el embedding 2D.
-
-Para la métrica de silhouette, se utiliza el algoritmo k-means aplicado igualmente sobre el embedding 2D.
+* t-SNE es sensible a los parámetros perplexity y learning_rate, por lo que pequeños cambios pueden modificar la forma de los clusters.
+* UMAP tiende a conservar mejor la estructura local con valores bajos de n_neighbors y la global con valores más altos.
+* LDA requiere una columna target y puede generar como máximo n_clases − 1 dimensiones.
+* PCA es un método lineal útil para capturar la varianza global y también puede emplearse como paso previo en otros análisis.
+* Para el cálculo de accuracy, se aplica un particionado 80/20 utilizando el algoritmo kNN sobre el embedding 2D.
+* Para la métrica de silhouette, se utiliza el algoritmo k-means aplicado igualmente sobre el embedding 2D.
 
 Este apartado cumple la función de guía práctica, orientando al usuario en la interpretación y correcta aplicación de los métodos de reducción de dimensionalidad y de las métricas incluidas en la aplicación.
 
