@@ -459,4 +459,11 @@ sudo chown -R ubuntu:ubuntu /home/ubuntu/Streamlit
 
 
 
-![Texto alternativo para la imagen](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/000.png)
+![000](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/000.png)
+![001](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/001.png)
+![002](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/002.png)
+![003](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/003.png)
+![004](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/004.png)
+![005](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/005.png)
+![006](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/006.png)
+
