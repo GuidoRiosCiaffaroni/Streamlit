@@ -442,3 +442,7 @@ with st.expander("Notas y recomendaciones"):
     )
 ```
 >
+```
+streamlit run app.py
+
+```
