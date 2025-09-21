@@ -584,9 +584,21 @@ Este apartado cumple la función de guía práctica, orientando al usuario en la
 
 ![010](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/010.png)
 
+> ### 12.-
 
+ChatGPT Plus
+
+En esta imagen se puede observar la sección “1) Carga de datos” dentro de la aplicación de Streamlit.
+
+El panel ofrece la posibilidad de subir un archivo en formato CSV o XLSX, ya sea arrastrándolo directamente al recuadro o seleccionándolo mediante el botón “Browse files”. Se indica un límite de carga de 200 MB por archivo.
+
+Debajo del cuadro de carga aparece el archivo Dry_Bean_Dataset.xlsx, con un tamaño de 3.0 MB, confirmando que el dataset ha sido cargado correctamente en la aplicación y está listo para ser utilizado en las etapas posteriores de configuración y análisis.
 
 ![011](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/011.png)
+
+> ### 13.-
+
+
 
 ![012](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/012.png)
 
