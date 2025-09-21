@@ -457,10 +457,22 @@ sudo chown -R ubuntu:ubuntu /home/ubuntu/Streamlit
 ```
 
 
+> 
+En esta imagen se puede observar que el usuario se encuentra dentro de su entorno virtual (venv) en Ubuntu, específicamente en la carpeta ~/streamlit_app. Desde esa ubicación ejecuta el comando:
 
-
+Lo anterior indica que el servidor de Streamlit está siendo iniciado correctamente desde el proyecto, constituyendo el paso final tras la configuración del entorno y la instalación de las librerías necesarias.
 ![000](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/000.png)
+
+>
+En esta imagen se puede observar que, tras ejecutar el comando streamlit run app.py dentro del entorno virtual (venv) en la carpeta ~/streamlit_app, el sistema despliega el mensaje de bienvenida de Streamlit.
+
+Se aprecia que la aplicación solicita opcionalmente ingresar un correo electrónico para recibir noticias, ofertas y actualizaciones. Además, informa sobre su política de privacidad y el uso de estadísticas de telemetría, aclarando que no se recopila ni almacena el contenido generado dentro de las aplicaciones (como texto, gráficos o imágenes).
+
+Finalmente, se muestra la instrucción para desactivar la recopilación de estadísticas de uso mediante la configuración en el archivo ~/.streamlit/config.toml, agregando la siguiente línea:
 ![001](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/001.png)
+
+>
+
 ![002](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/002.png)
 ![003](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/003.png)
 ![004](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/004.png)
