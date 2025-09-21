@@ -496,7 +496,77 @@ En el panel principal se muestra el título “App Streamlit de Reducción de Di
 
 Este estado refleja que la aplicación está lista para iniciar el procesamiento de datos, a la espera de que se cargue un dataset.
 ![003](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/003.png)
+
+>
+En esta imagen se puede observar la aplicación de Streamlit en funcionamiento, luego de haber cargado correctamente el archivo Dry_Bean_Dataset.xlsx de 3 MB.
+
+En el panel lateral izquierdo, dentro de la sección 1) Carga de datos, aparece el archivo ya cargado. En la sección 2) Configuración de columnas, se mantiene activa la opción que indica que la primera fila corresponde a encabezados, lo cual permite interpretar correctamente las variables del dataset.
+
+En el panel principal de la aplicación se despliega el título “App Streamlit de Reducción de Dimensionalidad”, seguido de la sección “Vista previa de datos”, donde se muestra una tabla con las primeras filas del dataset. Entre las columnas visibles se incluyen variables como Area, Perimeter, MajorAxisLength, MinorAxisLength, AspectRation, Eccentricity, ConvexArea, EquivDiameter, Extent y Solidity.
+
+Este estado refleja que el sistema ya está listo para iniciar el preprocesamiento y aplicar los métodos de reducción de dimensionalidad configurados en la aplicación.
 ![004](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/004.png)
+
+>
+En esta imagen se puede observar la sección “Vista previa de datos” de la aplicación en Streamlit, donde se muestran algunas de las filas del dataset previamente cargado.
+
+La tabla despliega distintas variables numéricas asociadas a las características de las muestras. Entre ellas destacan:
+
+Area: superficie medida.
+
+Perimeter: perímetro de la figura.
+
+MajorAxisLength y MinorAxisLength: longitudes de los ejes mayor y menor.
+
+AspectRation: relación de aspecto entre los ejes.
+
+Eccentricity: grado de desviación respecto a una forma circular.
+
+ConvexArea: área convexa que encierra la figura.
+
+EquivDiameter: diámetro equivalente.
+
+Extent: proporción del área de la figura respecto al área del rectángulo que la contiene.
+
+Solidity: relación entre el área de la figura y el área convexa.
+
+Este estado refleja que los datos han sido procesados correctamente por la aplicación y están listos para ser utilizados en los métodos de reducción de dimensionalidad (PCA, LDA, t-SNE y UMAP) que forman parte del flujo de análisis.
+
+>
+En esta imagen se puede observar la sección “Vista previa de datos” de la aplicación en Streamlit, donde se muestran algunas de las filas del dataset previamente cargado.
+
+La tabla despliega distintas variables numéricas asociadas a las características de las muestras. Entre ellas destacan:
+
+Area: superficie medida.
+
+Perimeter: perímetro de la figura.
+
+MajorAxisLength y MinorAxisLength: longitudes de los ejes mayor y menor.
+
+AspectRation: relación de aspecto entre los ejes.
+
+Eccentricity: grado de desviación respecto a una forma circular.
+
+ConvexArea: área convexa que encierra la figura.
+
+EquivDiameter: diámetro equivalente.
+
+Extent: proporción del área de la figura respecto al área del rectángulo que la contiene.
+
+Solidity: relación entre el área de la figura y el área convexa.
+
+Este estado refleja que los datos han sido procesados correctamente por la aplicación y están listos para ser utilizados en los métodos de reducción de dimensionalidad (PCA, LDA, t-SNE y UMAP) que forman parte del flujo de análisis.
 ![005](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/005.png)
+
+>
+En esta imagen se puede observar la sección “Proyección 2D del embedding” generada por la aplicación de Streamlit tras aplicar el método de Análisis de Componentes Principales (PCA).
+
+El gráfico de dispersión muestra los datos proyectados en dos dimensiones principales:
+
+El eje Emb1 corresponde al primer componente principal, que captura la mayor varianza posible de los datos originales.
+
+El eje Emb2 representa el segundo componente principal, ortogonal al primero y encargado de capturar la mayor varianza restante.
+
+La distribución de los puntos revela la estructura interna del dataset, evidenciando concentraciones y posibles agrupamientos de observaciones. Esta representación facilita la interpretación visual de la información de alta dimensionalidad reducida a un plano bidimensional, permitiendo identificar patrones, tendencias y relaciones entre las muestras analizadas.
 ![006](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/006.png)
 
