@@ -52,20 +52,10 @@ sudo pip install streamlit numpy pandas matplotlib seaborn plotly scikit-learn u
   
 > Crear la app de prueba
 ```
-# app.py — Examen (Punto 4.5): App Streamlit para reducción de dimensionalidad
-
-# Autor: ChatGPT
-
-# Descripción: App interactiva con layout claro, caching, y exportables.
-
-# Cumple con: 4.5 App Streamlit (layout, interactividad con cache, export de embedding y figura)
-
-# Requisitos: ver requirements.txt sugerido en el mensaje principal
-
+# App Streamlit para reducción de dimensionalidad
 
 
 import io
-
 import base64
 
 from typing import Tuple, Optional
@@ -73,43 +63,29 @@ from typing import Tuple, Optional
 
 
 import numpy as np
-
 import pandas as pd
-
 import streamlit as st
 
 
 
 from sklearn.model_selection import train_test_split
-
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
-
 from sklearn.impute import SimpleImputer, KNNImputer
-
 from sklearn.decomposition import PCA
-
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
-
 from sklearn.manifold import TSNE
-
 from sklearn.cluster import KMeans
-
 from sklearn.neighbors import KNeighborsClassifier
-
 from sklearn.metrics import accuracy_score, silhouette_score
 
 
 
-# UMAP es externo a scikit-learn
+# ------------------------------
 
 try:
-
     import umap
-
 except Exception:
-
     umap = None
-
 
 
 import plotly.express as px
@@ -117,9 +93,6 @@ import plotly.express as px
 
 
 st.set_page_config(page_title="Examen 4.5 – Reducción de Dimensionalidad", layout="wide")
-
-
-
 st.title("Examen 4.5 – App Streamlit de Reducción de Dimensionalidad")
 
 st.caption("Carga tu CSV/XLSX, prepara los datos y explora PCA, LDA, t‑SNE y UMAP con métricas y exportables.")
@@ -754,3 +727,4 @@ with st.expander("Notas y recomendaciones"):
 
     )
 ```
+>
