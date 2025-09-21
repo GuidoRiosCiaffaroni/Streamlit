@@ -82,12 +82,30 @@ source venv/bin/activate
  ```
 
 
- >03_install_streamlit.sh
+ >## 03_install_streamlit.sh
+### Instalar streamlit dentro del entorno 
+
+En este fragmento de código se puede observar un conjunto de instrucciones orientadas a la instalación y actualización de librerías necesarias para el desarrollo de aplicaciones en Python con Streamlit y herramientas de análisis de datos.
+
+Las líneas cumplen las siguientes funciones:
+
+* sudo pip install --upgrade pip: actualiza pip, el gestor de paquetes de Python, a su versión más reciente, garantizando compatibilidad y acceso a las últimas funcionalidades.
+* sudo pip install streamlit numpy pandas matplotlib seaborn plotly scikit-learn umap-learn kaleido openpyxl: instala de manera simultánea un conjunto de librerías esenciales:
+    * Streamlit: framework para crear aplicaciones web interactivas.
+    * NumPy: librería para cálculos numéricos y manejo de arreglos.
+    * Pandas: herramienta para la manipulación y análisis de datos estructurados.
+    * Matplotlib y Seaborn: librerías de visualización de datos.
+    * Plotly: librería para gráficos interactivos.
+    * Scikit-learn: librería de machine learning con múltiples algoritmos.
+    * UMAP-learn: implementación de UMAP para reducción de dimensionalidad.
+    * Kaleido: motor de exportación para gráficos de Plotly.
+    * Openpyxl: librería para leer y escribir archivos Excel en formato .xlsx.
+
+Este procedimiento garantiza que el entorno de trabajo disponga de todas las dependencias necesarias para realizar análisis de datos, visualizaciones y despliegues interactivos mediante Streamlit.
+
   ```
-# Instalar streamlit dentro del entorno 
 sudo pip install --upgrade pip
 sudo pip install streamlit numpy pandas matplotlib seaborn plotly scikit-learn umap-learn kaleido openpyxl
-
   ```
   
 > Crear la app de prueba
