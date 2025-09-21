@@ -570,3 +570,42 @@ El eje Emb2 representa el segundo componente principal, ortogonal al primero y e
 La distribución de los puntos revela la estructura interna del dataset, evidenciando concentraciones y posibles agrupamientos de observaciones. Esta representación facilita la interpretación visual de la información de alta dimensionalidad reducida a un plano bidimensional, permitiendo identificar patrones, tendencias y relaciones entre las muestras analizadas.
 ![006](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/006.png)
 
+> ### 9.-
+En esta imagen se puede observar la métrica no supervisada Silhouette, obtenida mediante la aplicación del algoritmo k-means sobre el embedding en dos dimensiones.
+
+El valor reportado es de 0.495, lo que indica un nivel moderado de cohesión y separación entre los grupos formados. La métrica Silhouette varía entre -1 y 1:
+
+Valores cercanos a 1 reflejan que los clusters están bien definidos y separados.
+
+Valores cercanos a 0 sugieren solapamiento entre grupos.
+
+Valores negativos implican que los datos pueden estar mal asignados a los clusters.
+
+En este caso, el resultado de 0.495 sugiere que los clusters generados presentan una estructura razonable, con una separación aceptable entre ellos, aunque no completamente óptima.
+![007](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/007.png)
+
+> ### 10.-
+En esta imagen se puede observar la sección correspondiente a la métrica supervisada de Accuracy, calculada mediante el algoritmo k-Nearest Neighbors (kNN).
+
+El mensaje mostrado indica que aún no se ha definido una columna target en la barra lateral de configuración. Esta columna es necesaria para evaluar el desempeño del modelo supervisado, ya que representa la variable de clase o etiqueta con la que se comparan las predicciones generadas por el algoritmo.
+
+Hasta que no se seleccione un atributo como target, la aplicación no podrá calcular ni mostrar el valor de accuracy, lo que resalta la importancia de identificar correctamente la variable dependiente en el dataset para llevar a cabo la evaluación supervisada.
+![008](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/008.png)
+
+> ### 11.-
+
+
+![009](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/009.png)
+
+![010](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/010.png)
+
+![011](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/011.png)
+
+![012](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/012.png)
+
+![013](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/013.png)
+
+![014](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/014.png)
+
+![015](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/015.png)
+
