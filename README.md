@@ -590,6 +590,7 @@ En esta imagen se puede observar la sección correspondiente a la métrica super
 El mensaje mostrado indica que aún no se ha definido una columna target en la barra lateral de configuración. Esta columna es necesaria para evaluar el desempeño del modelo supervisado, ya que representa la variable de clase o etiqueta con la que se comparan las predicciones generadas por el algoritmo.
 
 Hasta que no se seleccione un atributo como target, la aplicación no podrá calcular ni mostrar el valor de accuracy, lo que resalta la importancia de identificar correctamente la variable dependiente en el dataset para llevar a cabo la evaluación supervisada.
+
 ![008](https://github.com/GuidoRiosCiaffaroni/Streamlit/blob/main/img/008.png)
 
 > ### 11.-
