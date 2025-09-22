@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dimred-ccp"
+version = "0.1.0"
+description = "Streamlit app para reducción de dimensionalidad empaquetada como CCP."
+authors = [{ name = "Tu Nombre", email = "tu@email.com" }]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+  "streamlit>=1.33",
+  "numpy>=1.23",
+  "pandas>=1.5",
+  "scikit-learn>=1.3",
+  "plotly>=5.20",
+  "matplotlib>=3.7",
+  "seaborn>=0.13"
+]
+
+[project.optional-dependencies]
+umap = ["umap-learn>=0.5.5"]
+export = ["kaleido>=0.2.1"]
+
+[project.scripts]
+dimred-serve = "dimred_ccp.cli:serve"
