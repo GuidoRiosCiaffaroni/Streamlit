@@ -180,29 +180,17 @@ En este fragmento de código se puede observar una aplicación completa en Strea
 
 
 
-
-
-
-
-
-
-
 ```
 # App Streamlit para reducción de dimensionalidad
-
 
 import io
 import base64
 
 from typing import Tuple, Optional
 
-
-
 import numpy as np
 import pandas as pd
 import streamlit as st
-
-
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
@@ -213,8 +201,6 @@ from sklearn.manifold import TSNE
 from sklearn.cluster import KMeans
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, silhouette_score
-
-
 
 # ------------------------------
 
@@ -576,17 +562,34 @@ with st.expander("Notas y recomendaciones"):
 
     )
 ```
->Correr el Codigo 
+>## Correr el Codigo 
+
+En este fragmento de código se puede observar la instrucción utilizada para ejecutar una aplicación desarrollada con Streamlit.
+
+La línea cumple la siguiente función:
+
+streamlit run app.py: inicia el servidor de Streamlit y ejecuta el archivo app.py, que contiene la lógica de la aplicación. Una vez levantado el servicio, se muestra en la terminal la dirección Local URL (para acceder desde la misma máquina) y la Network URL (para acceder desde otros dispositivos en la red).
+
+Este comando constituye el paso final en el despliegue de la aplicación, permitiendo visualizar y utilizar de manera interactiva la interfaz desarrollada en Streamlit a través de un navegador web.
 ```
 streamlit run app.py
 
 ```
 
 
-> Para subir el arcchivo 
+> ## Archivo 
+## pasa la propiedad a tu usuario
+
+En este fragmento de código se puede observar una instrucción destinada a modificar los permisos de propiedad de un directorio en Ubuntu.
+
+La línea cumple la siguiente función:
+
+* sudo chown -R ubuntu:ubuntu /home/ubuntu/Streamlit: cambia de manera recursiva (-R) el propietario y el grupo del directorio /home/ubuntu/Streamlit al usuario ubuntu y al grupo ubuntu. Esto significa que tanto el usuario como su grupo asociado tendrán control total sobre los archivos y subcarpetas contenidas en dicho directorio.
+
+Este comando resulta fundamental cuando se presentan errores de permisos al ejecutar aplicaciones o acceder a archivos, asegurando que el usuario correcto tenga la propiedad necesaria para leer, modificar o ejecutar los contenidos de la carpeta indicada.
 
 ```
-# pasa la propiedad a tu usuario
+
 sudo chown -R ubuntu:ubuntu /home/ubuntu/Streamlit
 
 ```
